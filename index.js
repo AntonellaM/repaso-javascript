@@ -5,31 +5,37 @@ var paragraph = document.querySelector("div")
 paragraph.innerHTML = "He aprendido bien cómo funcionan los bucles"
 var resultado = ""
 var frase = "<p>He aprendido bien cómo funcionan los bucles</p>"
-var elegirColor= "<select> <option>blanco</option><option>azul</option><option>rojo</option> <option>verde</option><option>amarillo</option> <option>rosa</option></select>"
 
-for (var i = 0; i < 100; i++)
+for (var i = 0; i < 100; i++) {
+
+  var elegirColor= "<select id="+i+"> <option>blanco</option><option>azul</option><option>rojo</option> <option>verde</option><option>amarillo</option> <option>rosa</option></select>"
+
 
   resultado = resultado + frase + elegirColor
-
+}
 
 paragraph.innerHTML = resultado
 
 var selectores=document.querySelectorAll("select")
 
+
 function usuarioElige(event){
   var numeros=event.target.selectedIndex
+  var selectModificado = event.target.id
+  var parrafos=document.querySelectorAll("p")
+  var parrafo = parrafos[selectModificado]
   if (numeros===0)
-    document.querySelector("p").style.color="white"
+    parrafo.style.color="white"
   else if(numeros===1)
-    document.querySelector("p").style.color="blue"
+    parrafo.style.color="blue"
   else if(numeros===2)
-    document.querySelector("p").style.color="red"
+    parrafo.style.color="red"
   else if(numeros===3)
-    document.querySelector("p").style.color="green"
+    parrafo.style.color="green"
   else if(numeros===4)
-    document.querySelector("p").style.color="yellow"
+    parrafo.style.color="yellow"
   else
-    document.querySelector("p").style.color="pink"
+    parrafo.style.color="pink"
 
 }
 
