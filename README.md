@@ -46,9 +46,17 @@ Sigue los pasos de git del ejercicio anterior para subir el código al repostori
 ### 3. Vamos a darle color
 Ahora viene lo bueno: vamos a añadir el comportamiento a la web para que al modificar un combo se cambie el color del texto de esa línea al color indicado en el combo. Por ejemplo, si modificamos el color del combo de la línea 3 a rosa, el texto de la línea 3 se convierte en rosa.
 
+Algunas pistas para esta parte:
+- primero haced funcionar un combo para una única línea
+- investigad cómo funciona el evento *change*  de los elementos *select* [doc en inglés][3]
+- desde el objeto `event` de la función escuchadora, podemos acceder al *select* que ha provocado el evento mediante `event.target`; incluso a índice (como en un array) de la opción seleccionada con `event.target.selectedIndex`
+
+¡A por ello!
+
 #### ¡Conseguido!
 
 Sigue los pasos de git del ejercicio anterior para subir el código al repostorio en GitHub, y que el resto se lo descarguen.
 
 [1]: https://tutorial.djangogirls.org/es/intro_to_command_line/#cambia-el-directorio-actual
 [2]: https://www.sublimetext.com/3
+[3]: https://developer.mozilla.org/en-US/docs/Web/Events/change
