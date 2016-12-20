@@ -7,32 +7,33 @@ var resultado = ""
 var frase = "<p>He aprendido bien cómo funcionan los bucles</p>"
 var elegirColor= "<select> <option>blanco</option><option>azul</option><option>rojo</option> <option>verde</option><option>amarillo</option> <option>rosa</option></select>"
 
-for (var i = 0; i < 100; i++) {
+for (var i = 0; i < 100; i++)
 
   resultado = resultado + frase + elegirColor
 
-}
 
 paragraph.innerHTML = resultado
 
-var selector=document.querySelector("select")
+var selectores=document.querySelectorAll("select")
 
 function usuarioElige(event){
   var numeros=event.target.selectedIndex
-  document.querySelector("p").style.color="red"
-  if (numeros===0) {
+  if (numeros===0)
     document.querySelector("p").style.color="white"
-  } else if(numeros===1){
+  else if(numeros===1)
     document.querySelector("p").style.color="blue"
-  }else if(numeros===2){
+  else if(numeros===2)
     document.querySelector("p").style.color="red"
-  }else if(numeros===3){
+  else if(numeros===3)
     document.querySelector("p").style.color="green"
-  }else if(numeros===4){
+  else if(numeros===4)
     document.querySelector("p").style.color="yellow"
-  }else{
+  else
     document.querySelector("p").style.color="pink"
-  }
+
 }
 
-selector.addEventListener("change", usuarioElige)
+for (var j = 0; j < selectores.length; j++)
+  selectores[j].addEventListener("change", usuarioElige)
+
+
