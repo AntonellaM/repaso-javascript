@@ -18,7 +18,7 @@ Para empezar vamos a aprender cómo usar realizar los ejercicios en vuestro equi
 
 Cuando tengamos todo funcionando, vamos a guardar el resultado en nuestro repositorio de control de versiones con git. Para ello tenemos que ejecutar los siguientes comandos en orden:
 
-```git add listado-de-ficheros-modificados```, siendo el listado de ficheros modificados por ejemplo `index.js` si sólo hemos modificado el JS, o `index.html index.js` si hemos modificado estos dos ficheros (nombres separados por un espacio). Para consultar los ficheros modificados, puedes hacerlo con git status`
+```git add listado-de-ficheros-modificados```, siendo el listado de ficheros modificados por ejemplo `index.js` si sólo hemos modificado el JS, o `index.html index.js` si hemos modificado estos dos ficheros (nombres separados por un espacio). Para consultar los ficheros modificados, puedes hacerlo con `git status`
 
 ```git commit -m mensaje-descriptivo-del-commit```, siendo el mensaje algo que diga qué cambios hemos hecho en el código (qué hemos añadido o quitado). Por ejemplo podríamos poner "Añadida la funcionalidad que pinta en la pizarra 100 veces un mensaje". ¡Con esto ya tenemos esta funcionalidad para siempre en nuestro control de versiones!
 
