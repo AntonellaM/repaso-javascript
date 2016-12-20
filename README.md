@@ -18,7 +18,7 @@ Para empezar vamos a aprender cómo usar realizar los ejercicios en vuestro equi
 
 Cuando tengamos todo funcionando, vamos a guardar el resultado en nuestro repositorio de control de versiones con git. Para ello tenemos que ejecutar los siguientes comandos en orden:
 
-```git add listado-de-ficheros-modificados```, siendo el listado de ficheros modificados por ejemplo `index.js` si sólo hemos modificado el JS, o `index.html index.js` si hemos modificado estos dos ficheros (nombres separados por un espacio)
+```git add listado-de-ficheros-modificados```, siendo el listado de ficheros modificados por ejemplo `index.js` si sólo hemos modificado el JS, o `index.html index.js` si hemos modificado estos dos ficheros (nombres separados por un espacio). Para consultar los ficheros modificados, puedes hacerlo con git status`
 
 ```git commit -m mensaje-descriptivo-del-commit```, siendo el mensaje algo que diga qué cambios hemos hecho en el código (qué hemos añadido o quitado). Por ejemplo podríamos poner "Añadida la funcionalidad que pinta en la pizarra 100 veces un mensaje". ¡Con esto ya tenemos esta funcionalidad para siempre en nuestro control de versiones!
 
@@ -34,6 +34,11 @@ Para que las demás puedan descargar la última versión del código tienen que 
 
 3. Ejecuta `git pull` para descargar los datos de la última versión del código en el repositorio. ¡Ya tienes todo listo para seguir!
 
+#### Problemas que puedes encontrarte
+
+1. Si tienes algún error al hacer el `git push`, seguramente tengas que hacer un `git pull` primero para traerte los datos del servidor
+
+2. También puedes tener un error al hacer el `git pull` porque tienes cambios en local (en el proyecto de tu ordenador) que no han sido commiteados (añadidos al control de versiones) porque has dejado un ejercicio a medias. Para poder descargar los cambios del servidor tenemos que descartar los cambios locales mediante `git stash` y volverás al último commit local. Ahora ya puedes hacer el `git pull` de forma efectiva
 
 ### 2. Un combo por línea
 
