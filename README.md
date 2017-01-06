@@ -6,7 +6,9 @@ En este repositorio vamos a realizar algunos ejercicios para repasar JavaScript 
 
 Para empezar vamos a aprender cómo usar realizar los ejercicios en vuestro equipo local. Para ello debes clonar (hacer una copia) de este repositorio en tu equipo desde el terminal de comandos. Abre el terminal y muévete (usando `cd`, si no lo conoces [mira esta documentación][1] a la localización de tu ordenador donde quieras crear el proyecto. A continuación, ejecuta este comando:
 
-```git clone https://github.com/Adalab/repaso-javascript.git```
+```shell
+git clone https://github.com/Adalab/repaso-javascript.git
+```
 
 ¡Ya tienes todo el código en tu equipo! Ahora ábrelo en tu editor favorito (en clase usamos normalmente [Sublime Text 3][2], en tu navegador y estamos listos para empezar a trabajar.
 
@@ -18,11 +20,11 @@ Para empezar vamos a aprender cómo usar realizar los ejercicios en vuestro equi
 
 Cuando tengamos todo funcionando, vamos a guardar el resultado en nuestro repositorio de control de versiones con git. Para ello tenemos que ejecutar los siguientes comandos en orden:
 
-```git add listado-de-ficheros-modificados```, siendo el listado de ficheros modificados por ejemplo `index.js` si sólo hemos modificado el JS, o `index.html index.js` si hemos modificado estos dos ficheros (nombres separados por un espacio). Para consultar los ficheros modificados, puedes hacerlo con `git status`
+`git add listado-de-ficheros-modificados`, siendo el listado de ficheros modificados por ejemplo `index.js` si sólo hemos modificado el JS, o `index.html index.js` si hemos modificado estos dos ficheros (nombres separados por un espacio). Para consultar los ficheros modificados, puedes hacerlo con `git status`
 
-```git commit -m mensaje-descriptivo-del-commit```, siendo el mensaje algo que diga qué cambios hemos hecho en el código (qué hemos añadido o quitado). Por ejemplo podríamos poner "Añadida la funcionalidad que pinta en la pizarra 100 veces un mensaje". ¡Con esto ya tenemos esta funcionalidad para siempre en nuestro control de versiones!
+`git commit -m "mensaje descriptivo del commit"`, siendo el mensaje algo que diga qué cambios hemos hecho en el código (qué hemos añadido o quitado) y escrito entre comillas dobles. Por ejemplo podríamos poner `"Añadida la funcionalidad que pinta en la pizarra 100 veces un mensaje"`. ¡Con esto ya tenemos esta funcionalidad para siempre en nuestro control de versiones!
 
-```git push origin master``` para publicar los cambios en el repositorio de Adalab en GitHub. De esta forma el resto de adalabers tendrán acceso al código que has subido. 
+`git push origin master` para publicar los cambios en el repositorio de Adalab en GitHub. De esta forma el resto de adalabers tendrán acceso al código que has subido.
 
 #### ¿Cómo alguien se descarga tus cambios?
 
@@ -42,7 +44,7 @@ Para que las demás puedan descargar la última versión del código tienen que 
 
 ### 2. Un combo por línea
 
-¡Seguimos con nuestra pizarra! Ahora vamos a añadir un combo (elemento `select` de HTML) al final de cada línea con el texto que añadimos antes. En el combo podremos seleccionar un color de los siguientes: blanco, azul, rojo, verde, amarillo, rosa. Por defecto, el combo tendrá seleccionado el color blanco que es el color del texto de los párrafos. 
+¡Seguimos con nuestra pizarra! Ahora vamos a añadir un combo (elemento `select` de HTML) al final de cada línea con el texto que añadimos antes. En el combo podremos seleccionar un color de los siguientes: blanco, azul, rojo, verde, amarillo, rosa. Por defecto, el combo tendrá seleccionado el color blanco que es el color del texto de los párrafos.
 
 #### ¡Conseguido!
 
